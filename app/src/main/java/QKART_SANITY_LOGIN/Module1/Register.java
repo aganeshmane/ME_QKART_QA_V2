@@ -51,7 +51,7 @@ public class Register {
 
         // Find the Confirm password text box
         WebElement confirm_password_txt_box;
-        confirm_password_txt_box = this.driver.findElement(By.id("confirmPassword"));
+        confirm_password_txt_box = this.driver.findElement(By.xpath("//input[@placeholder='Re-enter your password to confirm']"));
 
         // Enter the Confirm Password Value
         confirm_password_txt_box.sendKeys(test_data_password);
